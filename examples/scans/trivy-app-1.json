@@ -1,0 +1,76 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "company/app:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "debian",
+      "Name": "11.7"
+    },
+    "ImageID": "sha256:2b3ca0b0c",
+    "DiffIDs": [
+      "sha256:3b3ca0b0c"
+    ],
+    "RepoTags": [
+      "company/app:latest"
+    ],
+    "RepoDigests": [
+      "company/app@sha256:4b3ca0b0c"
+    ]
+  },
+  "Results": [
+    {
+      "Target": "company/app:latest (debian 11.7)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-1234",
+          "PkgName": "openssl",
+          "InstalledVersion": "1.1.1n-0+deb11u4",
+          "FixedVersion": "1.1.1n-0+deb11u5",
+          "Layer": {
+            "DiffID": "sha256:3b3ca0b0c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-1234",
+          "Title": "OpenSSL: Null pointer dereference during SSL handshake",
+          "Description": "A vulnerability in OpenSSL could allow an attacker to cause a denial of service",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5678",
+          "PkgName": "curl",
+          "InstalledVersion": "7.74.0-1.3+deb11u7",
+          "FixedVersion": "7.74.0-1.3+deb11u8",
+          "Layer": {
+            "DiffID": "sha256:3b3ca0b0c"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5678",
+          "Title": "curl: Buffer overflow in MQTT processing",
+          "Description": "A buffer overflow vulnerability in curl's MQTT handler could lead to code execution",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

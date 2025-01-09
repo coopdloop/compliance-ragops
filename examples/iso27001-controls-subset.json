@@ -1,0 +1,48 @@
+{
+  "standard": "ISO 27001:2013",
+  "section": "A.12 Operations Security",
+  "controls": {
+    "A.12.1": {
+      "name": "Operational procedures and responsibilities",
+      "requirements": {
+        "A.12.1.1": {
+          "control": "Documented operating procedures",
+          "requirements": [
+            "Operating procedures must be documented",
+            "Procedures must be available to authorized users",
+            "Procedures must be regularly reviewed and updated"
+          ]
+        },
+        "A.12.1.2": {
+          "control": "Change management",
+          "requirements": [
+            "Changes must be controlled and documented",
+            "Security impact must be assessed",
+            "Approval process must be followed"
+          ]
+        },
+        "A.12.1.4": {
+          "control": "Separation of development, testing and operational environments",
+          "requirements": [
+            "Development, test and operational environments must be separated",
+            "Access between environments must be controlled",
+            "Different security levels must be implemented"
+          ]
+        }
+      }
+    },
+    "A.12.2": {
+      "name": "Protection from malware",
+      "requirements": {
+        "A.12.2.1": {
+          "control": "Controls against malware",
+          "requirements": [
+            "Malware detection must be implemented",
+            "Regular scanning must be performed",
+            "Protection must be regularly updated"
+          ]
+        }
+      }
+    }
+  }
+}
