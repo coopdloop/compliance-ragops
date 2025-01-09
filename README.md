@@ -2,6 +2,9 @@
 
 An agentic AI platform for automated security scanning, compliance analysis, and continuous monitoring.
 
+
+![app front](docs/images/appfrontgif.gif)
+
 ## Features
 
 - **Automated Security Scanning**
