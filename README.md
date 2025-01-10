@@ -2,6 +2,13 @@
 
 An agentic AI platform for automated security scanning, compliance analysis, and continuous monitoring.
 
+**NOTE** There are likely some bugs with the async on OpenAI requests and
+function calls. And perhaps this blocks backend requests, I understand that and
+am working on it. There are also limitations and lack of implementation for
+some of the RAG - retrieval process.
+
+This application is still in building phase.
+
 
 ![app front](docs/images/appfrontgif.gif)
 

@@ -212,7 +212,7 @@ class AgenticAIAnalyzer:
             if result.content:
                 logger.info(
                     f"""💬 AI Response:
-                {result.content}...
+                {result.content[:50]}...
                 """
                 )
 
@@ -294,7 +294,7 @@ class AgenticAIAnalyzer:
                     if response:
                         logger.info(
                             f"""💭 AI Reasoning Step {step + 1}:
-                            {response}...
+                            {response[:100]}...
                             """
                         )
                         analysis_result["findings"].append(response)
@@ -571,7 +571,7 @@ class AgenticAIAnalyzer:
                         )
                     response_text = response.text
                     logger.info(f"📥 Response status: {response.status_code}")
-                    logger.info(f"📥 Response body: {response_text}...")
+                    # logger.info(f"📥 Response body: {response_text[:10]}...")
 
                     if response.status_code == 403:
                         error_msg = "Authentication failed - check service account configuration"
@@ -590,9 +590,9 @@ class AgenticAIAnalyzer:
                         json_response = response.json()
                         return json_response
                     except Exception as json_err:
-                        logger.error(
-                            f"❌ Failed to parse JSON response: {str(json_err)}"
-                        )
+                        # logger.error(
+                        #     f"❌ Failed to parse JSON response: {str(json_err)}"
+                        # )
                         return {"error": f"Invalid JSON response from {endpoint.name}"}
 
                     # return response.json()
